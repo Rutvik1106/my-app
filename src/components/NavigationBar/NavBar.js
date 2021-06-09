@@ -54,12 +54,12 @@ function Navbar() {
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/" onClick={closeMobileMenu}>
+                <NavLinks to="/upcomingEvents" onClick={closeMobileMenu}>
                   Upcoming Events
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/" onClick={closeMobileMenu}>
+                <NavLinks to="/news" onClick={closeMobileMenu}>
                   News Section
                 </NavLinks>
               </NavItem>

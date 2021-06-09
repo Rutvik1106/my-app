@@ -1,4 +1,6 @@
 import React from "react";
+import Cards from "../../components/Cards/Cards";
+import EventCard from "../../components/EventCard/EventCard";
 import InfoSection from "../../components/InfoSection/InfoSection";
 import BootstrapSlider from "./BootstrapSlider";
 import { homeObjOne,homeObjTwo,homeObjThree,SliderData } from "./Data";
@@ -10,6 +12,8 @@ const Home = () => {
       <InfoSection {...homeObjOne} />
       <ImageSlider slides={SliderData} /> 
       <InfoSection {...homeObjTwo} />
+      <EventCard />
+      <Cards />
     </>
   );
 };
