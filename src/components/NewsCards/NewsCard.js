@@ -9,11 +9,20 @@ import {
 import { Card, Button, CardGroup } from "react-bootstrap";
 import { Carousel } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+const styles = {
+
+  CardStyle:{
+    boxShadow: "0px 0px 35px rgba(165, 166, 170, 0.22)",
+    borderRadius: "9px",
+
+  }
+
+};
 const NewsCard = () => {
   return (
     <EventSection>
       <CardBody>
-        <Card>
+        <Card style={styles.CardStyle}>
           <Heading>News Section</Heading>
           <ImageBody>
             <Carousel>

@@ -12,6 +12,8 @@ export const EventSection = styled.div`
     display: flex;
   }
 `;
+ 
+
 export const Heading = styled.h1`
   color: black;
   margin: 10px auto;
@@ -22,7 +24,7 @@ export const ImageBody = styled.div`
   padding: 10px 100px 50px;
   justify-content: center;
   z-index: 1;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 646px) {
     margin: 0 auto;
     padding: 10px;
     width: 100%;
