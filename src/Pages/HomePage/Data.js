@@ -4,11 +4,11 @@ export const homeObjOne = {
   lightTopLine: true,
   lightText: true,
   lightTextDesc: true,
-  topLine: "Marketing Agency",
+  topLine: "Our Services",
   headline: "Lead Generation Specialist for Online Businesses",
   description:
     "We help business owners increase their revenue. Our team of unique specialist can help you achieve your business goals.",
-  buttonLabel: "Get Started",
+  // buttonLabel: "Get Started",
   imgStart: "",
   img: require("../../images/svg-1.svg").default,
   alt: "Credit Card",
@@ -21,7 +21,7 @@ export const homeObjTwo = {
   lightTopLine: true,
   lightText: true,
   lightTextDesc: true,
-  topLine: "Instant Setup",
+  topLine: "Upcoming Events",
   headline: "Extremely quick onboarding process",
   description:
     "Once you've joined, our team of specialist will reach out to you and get you set up in minutes.",
@@ -33,19 +33,19 @@ export const homeObjTwo = {
 };
 
 export const homeObjThree = {
-  primary: false,
-  lightBg: true,
-  lightTopLine: false,
-  lightText: false,
-  lightTextDesc: false,
-  topLine: "Sarah Jeni",
+  primary: true,
+  lightBg: false,
+  lightTopLine: true,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: "News Section",
   headline:
     "Ultra helped me increase my revenue by over 3X in less than 3 months!",
   description:
     "Their team is wonderful! I can't believe I didn't start working with them earlier.",
   buttonLabel: "View Case Study",
   imgStart: "start",
-  img: require("../../images/profile.jpg").default,
+  img: require("../../images/svg-3.svg").default,
   alt: "Vault",
   start: "true",
 };

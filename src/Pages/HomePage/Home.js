@@ -13,6 +13,7 @@ const Home = () => {
       <ImageGalleryCard />
       <InfoSection {...homeObjTwo} />
       <EventCard />
+      <InfoSection {...homeObjThree} />
       <NewsCard />
     </>
   );

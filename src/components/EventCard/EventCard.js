@@ -11,11 +11,11 @@ import { Carousel } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 const EventCard = () => {
   return (
-    // <EventSection>
-    //   <CardBody>
-    //     <Card>
-    //       <Heading>Upcoming Events</Heading>
-    //       <ImageBody>
+    <EventSection>
+      <CardBody>
+        <Card>
+          <Heading>Upcoming Events</Heading>
+          <ImageBody>
             <Carousel>
               <Carousel.Item interval={1000}>
                 <img
@@ -58,10 +58,10 @@ const EventCard = () => {
                 </Carousel.Caption>
               </Carousel.Item>
             </Carousel>
-    //       </ImageBody>
-    //     </Card>
-    //   </CardBody>
-    // </EventSection>
+          </ImageBody>
+        </Card>
+      </CardBody>
+    </EventSection>
   );
 };
 
