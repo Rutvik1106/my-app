@@ -1,17 +1,13 @@
 import React from "react";
-import Carousel from "react-bootstrap/Carousel";
+import { Carousel } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-<link
-  rel="stylesheet"
-  href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css"
-></link>;
-const BootstrapSlider = () => {
+const ImageGalleryCard = () => {
   return (
     <Carousel>
       <Carousel.Item interval={1000}>
         <img
           className="d-block w-100"
-          src={require("../../images/svg-1.svg").default}
+          src="https://images.unsplash.com/photo-1501446529957-6226bd447c46?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1489&q=80"
           alt="First slide"
         />
         <Carousel.Caption>
@@ -22,7 +18,7 @@ const BootstrapSlider = () => {
       <Carousel.Item interval={500}>
         <img
           className="d-block w-100"
-          src={require("../../images/svg-2.svg").default}
+          src="https://images.unsplash.com/photo-1501446529957-6226bd447c46?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1489&q=80"
           alt="Second slide"
         />
         <Carousel.Caption>
@@ -33,7 +29,7 @@ const BootstrapSlider = () => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://images.unsplash.com/photo-1546768292-fb12f6c92568?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+          src="https://images.unsplash.com/photo-1501446529957-6226bd447c46?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1489&q=80"
           alt="Third slide"
         />
         <Carousel.Caption>
@@ -47,4 +43,4 @@ const BootstrapSlider = () => {
   );
 };
 
-export default BootstrapSlider;
+export default ImageGalleryCard;

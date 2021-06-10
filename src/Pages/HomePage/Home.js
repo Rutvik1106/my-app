@@ -1,19 +1,19 @@
 import React from "react";
 import Cards from "../../components/Cards/Cards";
 import EventCard from "../../components/EventCard/EventCard";
+import ImageGalleryCard from "../../components/ImageGalleryCard/ImageGalleryCard";
 import InfoSection from "../../components/InfoSection/InfoSection";
-import BootstrapSlider from "./BootstrapSlider";
+import NewsCard from "../../components/NewsCards/NewsCard";
 import { homeObjOne,homeObjTwo,homeObjThree,SliderData } from "./Data";
-import ImageSlider from "./Slider";
 
 const Home = () => {
   return (
     <>
       <InfoSection {...homeObjOne} />
-      <ImageSlider slides={SliderData} /> 
+      <ImageGalleryCard />
       <InfoSection {...homeObjTwo} />
       <EventCard />
-      <Cards />
+      <NewsCard />
     </>
   );
 };

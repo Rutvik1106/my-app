@@ -11,7 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-.slider {
+/* .slider {
   position: relative;
   height: 100vh;
   display: flex;
@@ -23,9 +23,9 @@ code {
   width: 1000px;
   height: 600px;
   border-radius: 10px;
-}
+} */
 
-.right-arrow {
+/* .right-arrow {
   position: absolute;
   top: 50%;
   right: 10px;
@@ -56,13 +56,13 @@ code {
   opacity: 1;
   transition-duration: 1s;
   transform: scale(1.08);
-}
+} */
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .image {
     max-width: 100%;
     flex-basis: 100%;
-    /* display: flex; */
+     display: flex; 
     justify-content: center;
   }
   .slider {
@@ -95,4 +95,4 @@ code {
   .right-arrow {
     margin-right: -120px;
   }
-}
+} */
