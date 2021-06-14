@@ -4,6 +4,8 @@ import EventCard from "../../components/EventCard/EventCard";
 import ImageGalleryCard from "../../components/ImageGalleryCard/ImageGalleryCard";
 import InfoSection from "../../components/InfoSection/InfoSection";
 import NewsCard from "../../components/NewsCards/NewsCard";
+import Handle from "../Login/Handle";
+import { Login } from "../Login/login";
 import { homeObjOne,homeObjTwo,homeObjThree,SliderData } from "./Data";
 
 const Home = () => {
@@ -15,6 +17,7 @@ const Home = () => {
       <EventCard />
       <InfoSection {...homeObjThree} />
       <NewsCard />
+      
     </>
   );
 };
