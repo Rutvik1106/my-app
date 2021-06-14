@@ -2,6 +2,10 @@ import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import { Button } from "../../GlobalStyle";
+import { useHistory } from "react-router";
+import { Login } from "../../Pages/Login/login";
+// import { Register } from "../../Pages/Login/register";
+import  Handle  from "../../Pages/Login/Handle";
 import {
   Nav,
   NavbarContainer,
@@ -17,10 +21,10 @@ import {
 function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
-
+  let history = useHistory();
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
-
+  
   const showButton = () => {
     if (window.innerWidth <= 960) {
       setButton(false);
@@ -65,11 +69,11 @@ function Navbar() {
               </NavItem>
               <NavItemBtn>
                 {button ? (
-                  <NavBtnLink to="/">
+                  <NavBtnLink to="/signup">
                     <Button primary>SIGN UP</Button>
                   </NavBtnLink>
                 ) : (
-                  <NavBtnLink to="/sign-up">
+                  <NavBtnLink to="/signup">
                     <Button onClick={closeMobileMenu} fontBig primary>
                       SIGN UP
                     </Button>
@@ -77,8 +81,8 @@ function Navbar() {
                 )}
               </NavItemBtn>
               <NavItemBtn>
-                <NavBtnLink to="/">
-                  <Button primary>LOGIN</Button>
+                <NavBtnLink>
+                  <Button primary onClick={()=>{history.push('/login')}} >LOGIN</Button>
                 </NavBtnLink>
               </NavItemBtn>
             </NavMenu>
@@ -88,5 +92,7 @@ function Navbar() {
     </>
   );
 }
-
+function handleLoginClick(){
+   
+}
 export default Navbar;
