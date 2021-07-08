@@ -4,7 +4,6 @@ import News from "./Pages/News/News";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
-import AdminHome from "./Pages/Admin/Admin_Home";
 import UpcomingEvent from "./Pages/UpcomingEvent/UpcomingEvent";
 
 function App() {
@@ -17,7 +16,7 @@ function App() {
         <Route path="/contactus" component={News} />
         {/* <Route path="/login" component={Login} />
         <Route path="/signup" component={Register} /> */}
-        <Route path="/adminhome" component={AdminHome} />
+        {/* <Route path="/adminhome" component={AdminHome} /> */}
       </Switch>
       <Footer />
     </Router>

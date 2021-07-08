@@ -3,11 +3,11 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 // import { Button } from "../../GlobalStyle";
 import { useHistory } from "react-router";
-import { Login } from "../../Pages/Login/login";
+// import { Login } from "../../Pages/Login/login";
 
 import { Modal, Button, Form } from "react-bootstrap";
 // import { Register } from "../../Pages/Login/register";
-import Handle from "../../Pages/Login/Handle";
+// import Handle from "../../Pages/Login/Handle";
 import {
   Nav,
   NavbarContainer,

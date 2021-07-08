@@ -1,6 +1,5 @@
 import React from "react";
 import ReactPlayer from "react-player/youtube";
-import YouTube from "react-youtube";
 const VideoPlayer = () => {
   return (
     <>
