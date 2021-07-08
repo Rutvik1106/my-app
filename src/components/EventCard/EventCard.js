@@ -1,6 +1,23 @@
 import React from "react";
+import pencil from "../../images/Icons/pencil.png";
+import mission from "../../images/Icons/global.png";
+import action from "../../images/Icons/grid.png";
+import dedication from "../../images/Icons/target.png";
+import purification from "../../images/Icons/atom.png";
+import satisfaction from "../../images/Icons/satisfaction.png";
+import AboutUsFeature from "../AboutUs/AboutUsFeature";
+import AboutUsBanner from "../AboutUs/AboutUsBanner";
 import {
   EventSection,
+  VerticalClass,
+  FirstDiv,
+  SecondDiv,
+  Discription,
+  Hordiv1,
+  Firsthordiv,
+  Secondhordiv,
+  ToolIcon,
+  Hordiv2,
   Heading,
   ImageBody,
   CardBody,
@@ -9,68 +26,74 @@ import {
 import { Card, Button, CardGroup } from "react-bootstrap";
 import { Carousel } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+// import AboutUsFeature from "../AboutUs/AboutUsFeature";
 const styles = {
-
-  CardStyle:{
+  CardStyle: {
     boxShadow: "0px 0px 35px rgba(165, 166, 170, 0.22)",
     borderRadius: "9px",
-
-  }
-
+  },
 };
+const features = [
+  {
+    image: pencil,
+    title: "VISION",
+    desc: "A wonderful serenity has taken possession of my entire soul like these sweet mornings.",
+  },
+  {
+    image: mission,
+    title: "MISSION",
+    desc: "A wonderful serenity has taken possession of my entire soul like these sweet mornings.",
+  },
+  {
+    image: action,
+    title: "ACTION",
+    desc: "A wonderful serenity has taken possession of my entire soul like these sweet mornings.",
+  },
+];
+const otherfeatures = [
+  {
+    image: dedication,
+    title: "DEDICATION",
+    desc: "A wonderful serenity has taken possession of my entire soul like these sweet mornings.",
+  },
+  {
+    image: purification,
+    title: "PURIFICATION",
+    desc: "A wonderful serenity has taken possession of my entire soul like these sweet mornings.",
+  },
+  {
+    image: satisfaction,
+    title: "SATISFACTION",
+    desc: "A wonderful serenity has taken possession of my entire soul like these sweet mornings.",
+  },
+];
 const EventCard = () => {
   return (
     <EventSection>
-      <CardBody>
-        <Card style={styles.CardStyle}>
-
-            <Heading>Upcoming Events</Heading>
-            <ImageBody>
-              <Carousel>
-                <Carousel.Item interval={1000}>
-                  <img
-                    className="d-block w-100"
-                    src="https://images.unsplash.com/photo-1501446529957-6226bd447c46?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1489&q=80"
-                    alt="First slide"
-                  />
-                  <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>
-                      Nulla vitae elit libero, a pharetra augue mollis interdum.
-                    </p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item interval={500}>
-                  <img
-                    className="d-block w-100"
-                    src="https://images.unsplash.com/photo-1501446529957-6226bd447c46?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1489&q=80"
-                    alt="Second slide"
-                  />
-                  <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    className="d-block w-100"
-                    src="https://images.unsplash.com/photo-1501446529957-6226bd447c46?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1489&q=80"
-                    alt="Third slide"
-                  />
-                  <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>
-                      Praesent commodo cursus magna, vel scelerisque nisl
-                      consectetur.
-                    </p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-              </Carousel>
-            </ImageBody>
-        </Card>
-      </CardBody>
+      <VerticalClass>
+        <FirstDiv>
+          <h1>ABOUT TAPOVAN </h1>
+          <br></br>
+          <Discription>
+            Our mission is to produce the sensitive, laborious, dynamic,
+            patriotic and
+            <br /> spiritual leaders for bringing up perfect global amity.
+          </Discription>
+        </FirstDiv>
+        <SecondDiv>
+          <Hordiv1>
+            {features.map((variable, index) => {
+              return <AboutUsFeature varr={variable} key={index} />;
+            })}
+          </Hordiv1>
+          <Hordiv1>
+            {otherfeatures.map((variable, index) => {
+              return <AboutUsFeature varr={variable} key={index} />;
+            })}
+          </Hordiv1>
+        </SecondDiv>
+      </VerticalClass>
+      <AboutUsBanner />
     </EventSection>
   );
 };

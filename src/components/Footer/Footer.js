@@ -1,16 +1,13 @@
 import React from "react";
-import {
-  FaFacebook,
-  FaInstagram,
-  FaYoutube,
-  FaTwitter,
-} from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaYoutube, FaTwitter } from "react-icons/fa";
 import {
   FooterContainer,
   FooterLinksContainer,
   FooterLinksWrapper,
   FooterLinkItems,
   FooterLinkTitle,
+  FooterSpan,
+  FooterDesc,
   FooterLink,
   SocialIcons,
   SocialIconLink,
@@ -22,12 +19,26 @@ function Footer() {
       <FooterLinksContainer>
         <FooterLinksWrapper>
           <FooterLinkItems>
-            <FooterLinkTitle>About Us</FooterLinkTitle>
-            <FooterLink to="/">How it works</FooterLink>
+            <FooterLinkTitle>About E-Tapovan</FooterLinkTitle>
+            {/* <FooterLink to="/">How it works</FooterLink>
             <FooterLink to="/">Testimonials</FooterLink>
             <FooterLink to="/">Careers</FooterLink>
             <FooterLink to="/">Investors</FooterLink>
-            <FooterLink to="/">Terms of Service</FooterLink>
+            <FooterLink to="/">Terms of Service</FooterLink> */}
+
+            <p>
+              Our mission is to produce the sensitive, laborious, dynamic,
+              patriotic and spiritual <br />
+              leaders for bringing up perfect global amity.
+            </p>
+            <br />
+            <p>
+              <b>Phone:</b> +91 97238-87255, 74338-02178
+            </p>
+            <p>
+              <b>Email:</b>{" "}
+              <a href="mailto: info@etapovan.com">info@etapovan.com</a>
+            </p>
           </FooterLinkItems>
           <FooterLinkItems>
             <FooterLinkTitle>Contact Us</FooterLinkTitle>
@@ -39,9 +50,7 @@ function Footer() {
                 <FaInstagram />
               </SocialIconLink>
               <SocialIconLink
-                href={
-                  ""
-                }
+                href={""}
                 rel="noopener noreferrer"
                 target="_blank"
                 aria-label="Youtube"
@@ -59,6 +68,9 @@ function Footer() {
           </FooterLinkItems>
         </FooterLinksWrapper>
       </FooterLinksContainer>
+      <FooterSpan>
+        © 2021 TAPOVAN SANSKAR FOUNDATION, ALL RIGHTS RESERVED
+      </FooterSpan>
     </FooterContainer>
   );
 }

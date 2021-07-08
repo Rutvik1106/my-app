@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
-import { Button } from "../../GlobalStyle";
+// import { Button } from "../../GlobalStyle";
 import { useHistory } from "react-router";
 import { Login } from "../../Pages/Login/login";
+
+import { Modal, Button, Form } from "react-bootstrap";
 // import { Register } from "../../Pages/Login/register";
-import  Handle  from "../../Pages/Login/Handle";
+import Handle from "../../Pages/Login/Handle";
 import {
   Nav,
   NavbarContainer,
@@ -18,13 +20,19 @@ import {
   NavBtnLink,
 } from "./Navbar.elements";
 
+
 function Navbar() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
   let history = useHistory();
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
-  
+
   const showButton = () => {
     if (window.innerWidth <= 960) {
       setButton(false);
@@ -46,7 +54,7 @@ function Navbar() {
           <NavbarContainer>
             <NavLogo to="/" onClick={closeMobileMenu}>
               {/* <NavIcon /> */}
-              Tapovan NRI Shibir
+              E-TAPOVAN
             </NavLogo>
             <MobileIcon onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
@@ -58,13 +66,13 @@ function Navbar() {
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/upcomingEvents" onClick={closeMobileMenu}>
-                  Upcoming Events
+                <NavLinks to="/aboutus" onClick={closeMobileMenu}>
+                  About Us
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/news" onClick={closeMobileMenu}>
-                  News Section
+                <NavLinks to="/contactus" onClick={closeMobileMenu}>
+                  Contact Us
                 </NavLinks>
               </NavItem>
               <NavItemBtn>
@@ -73,7 +81,7 @@ function Navbar() {
                     <Button primary>SIGN UP</Button>
                   </NavBtnLink>
                 ) : (
-                  <NavBtnLink to="/signup">
+                  <NavBtnLink>
                     <Button onClick={closeMobileMenu} fontBig primary>
                       SIGN UP
                     </Button>
@@ -82,7 +90,18 @@ function Navbar() {
               </NavItemBtn>
               <NavItemBtn>
                 <NavBtnLink>
-                  <Button primary onClick={()=>{history.push('/login')}} >LOGIN</Button>
+                  {/* <Button
+                    primary
+                    // onClick={() => {
+                    //   history.push("/login");
+                    // }}
+                    
+                  >
+                    LOGIN
+                  </Button> */}
+                  <Button variant="primary" onClick={handleShow}>
+                    LOGIN
+                  </Button>
                 </NavBtnLink>
               </NavItemBtn>
             </NavMenu>
@@ -91,8 +110,5 @@ function Navbar() {
       </IconContext.Provider>
     </>
   );
-}
-function handleLoginClick(){
-   
 }
 export default Navbar;

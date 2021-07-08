@@ -89,7 +89,7 @@ export const FooterLinkItems = styled.div`
   align-items: flex-start;
   margin: 16px;
   text-align: left;
-  width: 160px;
+  width: 290px;
   box-sizing: border-box;
   color: #fff;
 
@@ -102,6 +102,11 @@ export const FooterLinkItems = styled.div`
 
 export const FooterLinkTitle = styled.h2`
   margin-bottom: 16px;
+`;
+export const FooterDesc = styled.h2`
+  text-align: justify;
+  // text-justify: inter-word;
+  font-size: 16px;
 `;
 
 export const FooterLink = styled(Link)`
@@ -164,4 +169,10 @@ export const SocialIcons = styled.div`
 export const SocialIconLink = styled.a`
   color: #fff;
   font-size: 24px;
+`;
+export const FooterSpan = styled.div`
+  display: flex;
+  color: #fff;
+  // background-color: purple;
+  
 `;

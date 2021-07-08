@@ -1,23 +1,21 @@
 import React from "react";
-import Cards from "../../components/Cards/Cards";
 import EventCard from "../../components/EventCard/EventCard";
-import ImageGalleryCard from "../../components/ImageGalleryCard/ImageGalleryCard";
 import InfoSection from "../../components/InfoSection/InfoSection";
-import NewsCard from "../../components/NewsCards/NewsCard";
-import Handle from "../Login/Handle";
-import { Login } from "../Login/login";
-import { homeObjOne,homeObjTwo,homeObjThree,SliderData } from "./Data";
+import VideoPlayer from "../../components/VideoPlayer/VideoPlayer";
+import ContactUsForm from "../../components/ContactusFrom/ContactUsForm";
+import { homeObjOne, homeObjTwo, homeObjThree, SliderData } from "./Data";
 
 const Home = () => {
   return (
     <>
-      <InfoSection {...homeObjOne} />
-      <ImageGalleryCard />
+      {/* <InfoSection {...homeObjOne} /> */}
+      <VideoPlayer />
+      {/* <ImageGalleryCard /> */}
       <InfoSection {...homeObjTwo} />
       <EventCard />
       <InfoSection {...homeObjThree} />
-      <NewsCard />
-      
+      {/* <NewsCard /> */}
+      <ContactUsForm />
     </>
   );
 };
